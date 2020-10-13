@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/normalize.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <!--Contenedor-->
+    <header class="site-header">
+      <div class="contenedor1 contenido-header">
+        <div class="barra">
+          <!--BARRA-->
+          <a href="/">
+            <img
+              src="/images/logo-pink.svg"
+              alt="Logo de la empresa"
+              height="150px"
+            />
+          </a>
+          <nav class="navegacion">
+            <a href="/nav_menu/nosotros.html">Nosotros</a>
+            <a href="/nav_menu/catalogo.html">Catalogo</a>
+            <a href="/nav_menu/contactanos.html">¡Haz tu Pedido!</a>
+          </nav>
+          <!--/BARRA-->
+        </div>
+      </div>
+    </header>
+    <!--/Contenedor-->
+
+    <!--FORMULARIO DE CONTACTO-->
+    <form action="" class="formulario contenedor-ayuda">
+      <h3 class="formulario__subtitulo">¡Realiza tu Pedido!</h3>
+      <p class="formulario__parrafo">
+        Llena este pequeño formulario para realizar tu Pedido.
+      </p>
+
+      <label for="cliente" class="formulario__label">¿Cuál es tu nombre?</label>
+      <input
+        id="cliente"
+        type="text"
+        class="formulario__input"
+        placeholder="Indica cuál es tu nombre completo"
+      />
+
+      <label for="Dirección" class="formulario__label">Dirección</label>
+      <input
+        type="text"
+        id="dirección-cliente-calle"
+        class="formulario__input"
+        placeholder="Calle"
+      />
+      <input
+        type="text"
+        id="dirección-cliente-ciudad"
+        class="formulario__input"
+        placeholder="Ciudad"
+      />
+      <input
+        type="text"
+        id="dirección-cliente-estado"
+        class="formulario__input"
+        placeholder="Estado"
+      />
+      <input
+        type="text"
+        id="dirección-cliente-cp"
+        class="formulario__input"
+        placeholder="Codigo Postal"
+      />
+
+      <label for="telefono" class="formulario__label">Télefono</label>
+      <input
+        type="tel"
+        id="telefono-cliente"
+        class="formulario__input"
+        placeholder="(812)-631-3366"
+      />
+
+      <label for="E-mail" class="formulario__label">E-mail</label>
+      <input
+        type="email"
+        id="correo-cliente"
+        class="formulario__input"
+        placeholder="ejemplo@ejemplo.com"
+      />
+
+      <label for="Tipo" class="formulario__label">ID de Modelo:</label>
+      <input
+        type="id-modelo"
+        id="id-modelo"
+        class="formulario__input"
+        placeholder="#12547"
+      />
+
+      <label for="Talla" class="formulario__label">Elige tu Talla:</label>
+      <select name="Talla" id="formulario__input">
+        <option value="" disabled selected>--Seleccione--</option>
+        <option value="">XS / 34</option>
+        <option value="">S / 36</option>
+        <option value="">M / 38</option>
+        <option value="">L / 40</option>
+        <option value="">XL / 42</option>
+      </select>
+
+      <label for="Color" class="formulario__label">Elige el Color:</label>
+      <input type="color" id="color-cliente" class="formulario__input color" />
+
+
+      <button id="submit" class="formulario__submit">Realizar Pedido</button>
+    </form>
+    <!--/FORMULARIO DE CONTACTO-->
+
+    <!--NAV-MENU-->
+    <footer class="footer-nav">
+      <div class="contenedor-footer contenedor1">
+        <nav class="navegacion-footer">
+          <a href="/nav_menu/nosotros.html">Nosotros</a>
+          <a href="/nav_menu/catalogo.html">Catalogo</a>
+          <a href="/nav_menu/contactanos.html">¡Haz tu Pedido!</a>
+        </nav>
+        <p class="copyright">Todos los Derechos Reservados 2020 &copy</p>
+      </div>
+    </footer>
+  </body>
+</html>

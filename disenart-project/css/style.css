@@ -1,0 +1,383 @@
+html {
+  font-size: 62.5%; /***Reset para REMS - 62.5 = 10px de 16px ***/
+}
+body {
+  font-family: "Lato", sans-serif;
+  font-size: 1.6rem;
+  line-height: 2;
+  background-color: #f5f5f5;
+}
+/* GLOBALES *****************************************************/
+img {
+  max-width: 100%; /**ajusta las imagenes (globales)**/
+}
+.contenedor {
+  /*TAMAÑO DEL CONTENEDOR (NAV+LOGO)*/
+  max-width: 120rem; /** = 1200px **/
+  margin: 0 auto;
+  border-bottom: solid;
+}
+.contenedor1 {
+  /*TAMAÑO DEL CONTENEDOR (NAV+LOGO)*/
+  max-width: 120rem; /** = 1200px **/
+  margin: 0 auto;
+}
+.contenedor-ayuda {
+  /*TAMAÑO DEL CONTENEDOR (NAV+LOGO)*/
+  max-width: 80rem; /** = 1200px **/
+  margin-top: 0rem;
+  margin: 0 auto;
+}
+h1 {
+  font-size: 3.8rem;
+} /*Sistema de tamaños*/
+h2 {
+  font-size: 3.4rem;
+}
+h3 {
+  font-size: 3rem;
+}
+h4 {
+  font-size: 2.8rem;
+}
+h6 {
+  font-size: 1.8rem;
+}
+/***Utilidades****************************************************/
+.seccion {
+  /*Separación (interlineado dentro de Sección)*/
+  margin-top: 2rem;
+  margin-bottom: 5rem;
+}
+.fw-300 {
+  /*Utilidad para configurar el tamaño de la fuente*/
+  font-weight: 400;
+}
+
+.centrar-texto {
+  text-align: center;
+}
+.contenido-centrado {
+  max-width: 800px; /*Ajuste en el Contenedor (mas Pequeño)*/
+}
+.boton {
+  color: #ffffff;
+  font-weight: 700;
+  text-decoration: none;
+  padding: 1rem 3rem;
+  text-align: center;
+  display: inline-block;
+  border: none;
+  border-radius: 1rem;
+}
+.boton-black {
+  background-color: #000000;
+}
+.boton-todo {
+  color: #000000;
+  background-color: #ffffff;
+  border: solid;
+  border-color: #333333;
+}
+.boton-todo:hover {
+  color: #ec008c;
+}
+/***HEADER*********************************************************/
+.site-header {
+  background-color: #333333;
+  padding: 1rem 0 3rem 0;
+}
+.site-header.inicio {
+  /*fondo*/
+  background-image: url(/images/background-wb.jpg);
+  background-position: center center;
+  background-size: cover;
+  height: 100vh; /*ocupa el total verticalmente de la imagen*/
+  min-height: 60rem;
+}
+.contenido-header {
+  /*Contenido del Header*/
+  height: 100%; /*para que todo el header abarque el background*/
+  display: flex; /*solo aplica a hijos de primer nivel*/
+  flex-direction: column;
+  justify-content: space-between;
+}
+.contenido-header h1 {
+  /*Texto del HEADER (Adicional- Titulo)*/
+  color: rgb(255, 255, 255);
+  text-shadow: 1px 7px 8px black;
+  padding-bottom: 3rem;
+  max-width: 60rem;
+  line-height: 2; /*interlineado*/
+}
+.barra {
+  /*BANNER de NAV y Logo*/
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 3rem;
+}
+/*NAVEGACION******************************************************/
+.navegacion a {
+  /*ESTILOS DE NAV-MENU*/
+  /*Menu de navegación*/
+  color: #ec008c;
+  text-decoration: none;
+  text-shadow: 10px 7px 8px black;
+  font-size: 3rem;
+  margin-right: 3rem;
+  font-weight: 600;
+  -webkit-text-stroke: .3px;
+  -webkit-text-stroke-color: #333333;
+}
+.navegacion a:last-of-type {
+  margin-right: 0rem;
+}
+.navegacion a:hover {
+  color: #ffffff;
+}
+/*CATALOGO-ANUNCIOS************************************************/
+.contenedor-anuncios {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.anuncio {
+  flex-basis: calc(30% - 1rem);
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.contenido-anuncio {
+  text-align: start;
+}
+.contenido-anuncio h6 {
+  margin: 0;
+  text-align: start;
+}
+.precio {
+  color: #895c49;
+  font-weight: 600;
+  margin: 0;
+}
+.ver-todo {
+  display: flex;
+  justify-content: flex-end;
+  margin: 2rem 0rem;
+}
+/*************************NEWSLETTER*********************/
+.newsletter {
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+  border-bottom: solid;
+}
+.newsletter-titulo {
+  margin: 0%;
+  font-weight: 500;
+}
+.newsletter-contenido {
+  margin: 0%;
+  margin-top: 1px;
+}
+.newsletter-campo{
+  display: block;
+  align-items: center;
+}
+.newsletter-campo input{
+  width: 30%;
+  text-align: center;
+}
+.enviar{
+  align-items: center;
+  margin-top: .5rem;
+  margin-bottom: 2rem;
+}
+/*************************AYUDA*********************/
+.footer-links-seccion {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 2rem 0rem;
+}
+.footer-link-column {
+  flex-basis: calc(32% - 1rem);
+  text-align: left;
+}
+.listado-ayuda {
+  list-style: none;
+  padding: 0;
+}
+.llamada2::before {
+  content: "";
+  background-image: url(/images/llamada2.svg);
+  width: 2rem;
+  height: 2rem;
+  display: block;
+  position: absolute;
+  left: -35px;
+}
+.llamada2 {
+  position: relative;
+}
+.chat::before {
+  content: "";
+  background-image: url(/images/chat.svg);
+  width: 2rem;
+  height: 1.6rem;
+  display: block;
+  position: absolute;
+  left: -35px;
+}
+.chat {
+  position: relative;
+}
+.footer-link-column a {
+  text-decoration: none;
+}
+.footer-link-column a:hover {
+  color: #ec008c;
+}
+/*************************FOOTER*********************/
+.footer-nav {
+  background-color: #333333;
+  margin: 0;
+}
+.contenedor-footer {
+  padding: 3rem;
+  display: flex;
+  justify-content: space-between;
+}
+.navegacion-footer a {
+  /*ESTILOS DE NAV-MENU*/
+  /*Menu de navegación*/
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 3rem;
+  margin-right: 2rem;
+}
+.navegacion-footer a:last-of-type {
+  margin-right: 0rem;
+}
+.navegacion-footer a:hover {
+  color: #ec008c;
+}
+.copyright {
+  margin: 0;
+  color: #ffffff;
+  padding-top: 1.2rem;
+}
+/***************************NOSOTROS*************************/
+.contenedor1 h2{
+  text-align: center;
+}
+/***************************CATALOGO********************/
+.anuncio{
+  margin-bottom: 5rem;
+}
+/***************************ANUNCIO********************/
+.anuncio-individual{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: space-between;
+  margin-left: 2rem;
+}
+.texto-anuncio{
+  margin-left: 3rem;
+  text-align: left;
+}
+.texto-anuncio h2{
+  font-weight: 700; 
+  line-height: 0;
+  text-align: left;
+}
+.texto-anuncio p{
+  text-align: left;
+  font-size: 2rem;
+  font-weight: 800;
+}
+.descripcion{
+  font-weight: 200;
+  text-align: justify;
+  margin-left: 2rem;
+}
+.form-p{
+  font-size: 1.9rem;
+  color: #333333;
+  margin: 2rem 0 0 2rem;
+  text-align: left;
+}
+.formulario-anuncio label{
+  text-align: left;
+  font-weight: 700;
+  display: block;
+  margin-left: 2rem;
+}
+/***************************CONTACTO*************************/
+.formulario{
+  width: 50rem;
+  max-width: 100%;
+  margin: auto;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  padding: 2rem;
+  /* box-shadow: 0 0 20px 1px; */
+  position: relative;
+  background: rgba(255, 255, 255, 0.97);
+  border-radius: 2rem;
+}
+.formulario__titulo,
+.formulario__subtitulo,
+.formulario__parrafo {
+  text-align: center;
+  margin-top: 0;
+}
+.formulario__titulo,
+.formulario__subtitulo {
+  color: rgba(0, 0, 0, 0.7);
+}
+.formulario__parrafo {
+  color: rgba(0, 0, 0, 0.5);
+}
+.formulario__input,
+.formulario__label {
+  display: block;
+  width: 95%;
+  font-size: 1, 3em;
+}
+.formulario__input {
+  padding: 1rem;
+  background: transparent;
+  /* puedo colocar otro color pero con transparencia asi: background: rgba(0,0,0,0.1) porque sino no se ven las label, aunque ya no es necesario porque ya no estan sobre los input y ademas le quite el z-index*/
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  margin-bottom: 1.5rem;
+  border-radius: 1rem;
+}
+.formulario__label {
+  padding-left: 15px;
+  /*position: absolute;*/
+  /*margin-top: -78px;*/
+  /*z-index: -20;*/
+  color: rgba(0, 0, 0, 0.7);
+  /*transition: all 0.2s;*/
+  margin: 2px;
+}
+.formulario__submit {
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 10px 20px;
+  cursor: pointer;
+  border: none;
+  border-radius: 20px;
+  display: block;
+  width: 50%;
+  font-size: 1, 3em;
+}
+.formulario__input,
+.formulario__submit { /*Centrar los campos del Formulario*/
+  margin-left: auto;
+  margin-right: auto;
+}
+/* .formulario__input.color{
+  width: 15rem;
+} */
